@@ -1,0 +1,31 @@
+@baseUrl=http://localhost:3001
+
+###
+post {{baseUrl}}/api/forum/add
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjRjNTQ4M2Q5YjZmZDFjZjQzNzM3OTQiLCJpYXQiOjE2NTAyMzE1MDYsImV4cCI6MTY1MDMxNzkwNn0.hGmfxSqAtATuZqP40_j4fm4p-BK0K8Mq5YUzVqA4oSE
+Content-Type: application/json
+
+{
+    "bootcampId":1,
+    "orgId":1,
+    "username": "bromagift",
+    "userId":2,
+    "userEntity":"org",
+    "content":"agaun",
+    "type":"announcement",
+    "mentions":["victorgbonna"]
+
+}
+
+###
+get {{baseUrl}}/api/forum/all/1
+
+
+###
+get {{baseUrl}}/api/notification/all?userEntity=org&userId=1
+Content-Type: application/json
+
+{
+    "email":"test@test.com",
+    "password":"test"
+}

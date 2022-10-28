@@ -1,0 +1,37 @@
+# dependencies
+/node_modules
+
+# logs
+npm-debug.log
+yarn-error.log
+
+# coverage
+coverage
+.nyc_output
+
+.git
+
+CVS
+
+*.log
+
+.svn
+.hg
+.lock-wscript
+.wafpickle-N
+.*.swp
+.DS_Store
+._*
+
+npm-debug.log
+
+.npmrc
+config.gypi
+
+*.orig
+package-lock.json
+
+# bunble dir
+dist
+### new bunble dir - experimental
+bin
